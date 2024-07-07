@@ -19,9 +19,9 @@ const HomeScreen = () => {
                 }}
             > Home Screen </Text>
             <TouchableOpacity 
-            onPress={() => navigation.navigate('Stack')} // navegar a la pantalla Stack
+            onPress={() => navigation.navigate('Products')} // navegar a la pantalla Stack
                 style={{
-                    backgroundColor: 'blue',
+                    backgroundColor: '#478CCF',
                     padding: 10,
                     marginTop: 10,
                     width: "50%",
@@ -33,7 +33,7 @@ const HomeScreen = () => {
                 color: 'white',
                 textAlign: 'center'
             }} 
-            > Go to home screen</Text>
+            > See Product</Text>
             </TouchableOpacity>
         </View>
     );
