@@ -65,7 +65,7 @@ function MyTabs() {
         name="Home" 
         component={MyStack}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "Home Screen",
           headerShown: false,
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="home-outline" size={24} color="black" />
@@ -140,11 +140,11 @@ function MyDrawer() {
         name="Settings" 
         component={SettingsScreen} 
       />
-      <Drawer.Screen 
+      {/* <Drawer.Screen 
         name="Login" 
         component={LoginScreen} 
         options={{ headerShown: false }}  // Ocultar el header en la pantalla de Login
-      />
+      /> */}
       {/* Add more screens to the drawer as needed */}
     </Drawer.Navigator>
   );

@@ -7,11 +7,11 @@ const LoginScreen = () => {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    // Aquí podrías realizar la lógica de autenticación
-    // Por ejemplo, verificar credenciales en una base de datos o API
+    // Aquí se puede hacer la validación del usuario y contraseña
+    // Por ahora, si el usuario es "user" y la contraseña es "password" se considera un login exitoso
     
     if (username === "user" && password === "password") {
-      // Aquí podrías navegar a la siguiente pantalla o realizar alguna acción
+      // Aquí se ejecuta la acción de navegar a la siguiente pantalla
       alert("Login successful!");
     } else {
       setError("Incorrect username or password");
@@ -19,7 +19,7 @@ const LoginScreen = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <View style={styles.authContainer}>
       <TextInput
         style={styles.input}
         placeholder="Username"
@@ -56,11 +56,12 @@ const LoginScreen = () => {
 };
 
 const styles = StyleSheet.create({
-  container: {
+  authContainer: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    paddingHorizontal: 20,
+    pagging: 16,
+    backgroundColor: "#f0f0f0",
   },
   input: {
     width: "100%",
@@ -70,6 +71,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     marginBottom: 10,
     paddingHorizontal: 10,
+    backgroundColor: "#fff",
   },
   errorText: {
     color: "red",
